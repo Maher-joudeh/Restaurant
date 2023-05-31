@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Gourmet Italiano Restaurant" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourmet Italiano Restaurant</title>
+    <!-- External Styling File -->
+    <link rel="stylesheet" href="./index.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="main-heading">
+        <img class="logo" src="https://i.ibb.co/16K2J2T/logo.png">
+        </br>
+        <!-- Inline styling used -->
+        <h1 class="main-heading__title">Gourmet Italiano Restaurant</h1>
+        <h3 class="main-heading__subtitle">Welcome to the Gourmet Italiano Restaurant website</h3>
+        <ul class="main-heading__nav">
+            <li><a href="https://maher-joudeh.github.io/my-restaurant/index.html" class="main-heading__nav-link">Home</a></li>
+            <li><a href="https://maher-joudeh.github.io/my-restaurant/about.html" class="main-heading__nav-link">AboutUs</a></li>
+            <li><a href="#contact-us" class="main-heading__nav-link">ContactUs</a></li>
+        </ul>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <form id="foodType">
+            <fieldset>
+                <legend>What additional foods you think we should add to our menu?</legend>
+                <label for="name">Food Name:</label>
+                <input type="text" id="name">
+                <br>
+
+                <label for="types">Type of the food:</label>
+                <select name="types" id="types">
+                    <option value="Fruit & vegetables">Fruit and vegetables</option>
+                    <option value="Starchy food">Starchy food</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Protein">Protein</option>
+                    <option value="Fat">Fat</option>
+                </select>
+                <br>
+
+                <label for="price">Price:</label>
+                <input type="text" id="price" placeholder="Ex: 2JD">
+                <br>
+
+                <input type="submit" value="Submit" id="save">
+            </fieldset>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="tBody"></tbody>
+        </table>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Contact Info-->
+        <h2 class="contact-header">Contact Us</h2>
+        <br>
+        <p class="social-media-info">Social Media Accounts:<br>
+            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i>gourmetitaliano</a><br>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i>@gourmet_italiano</a><br>
+            <a href="https://Instagram.com/" target="_blank"><i class="fab fa-instagram"></i>@gourmetitalianorestaurant</a><br>
+       
+        <h2 class="quote-header">"A dining experience to live for"</h2>
+        <br>
+        <div class="copyright">
+            <!-- Copyrights-->
+            <p>All Rights Reserved @ Maher Joudeh</p>
+        </div>
+    </footer>
+
+    <!-- External Script File -->
+    <script src="./app.js"></script>
 </body>
 </html>
